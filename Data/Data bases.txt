@@ -1,0 +1,5 @@
+The GWAS to use for the exposure is from the Feofanova et al GWAS of uric acid: "SOL_urate_summary.csv.gz" 
+Paper is here: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7675000/
+
+The GWAS to use for the outcomes is from the Nikpay et al GWAS of coronary artery disease: "cad.add.160614.website.txt.gz" 
+Paper is here: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4589895/

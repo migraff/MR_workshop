@@ -1,0 +1,25 @@
+November 5<sup>th</sup>, 2023
+
+**Intro to MR Workshop**
+
+Welcome to this short intro to Mendelian randomization!
+
+Files and scripts you will need to download to your computer are bolded below.
+
+The R packages we will be using for the workshop are in this script in the scripts/ folder: **MR\_workshop\_packages.R**, which can be found on the google drive above. If you are able, please download them prior to the course.
+
+We will be using two publicly available GWAS summary statistics for an example of Mendelian Randomization analysis:
+
+1. The GWAS to use for the exposure is from the Feofanova et al GWAS of uric acid in the Data/ folder: "SOL\_urate\_summary.csv.gz" is the full set of summary statistics.  
+   1. In this class I reduced this to variants with p<0.01 for quicker reading. This smaller file is called **Exposure\_GWAS\_SOL\_urate.csv.gz** and can be found on the google drive above.
+   1. Paper for this omics study is here: <https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7675000/>
+
+1. The GWAS to use for the outcomes is from the Nikpay et al GWAS of coronary artery disease Data/ folder: "cad.add.160614.website.txt.gz" is the full set of summary statistics.
+   1. In this class I reduced this to variants that are also pulled from the Exposure GWAS listed above (p<0.01) for quicker reading.  This smaller file is called **Outcome\_GWAS\_CAD\_160614.txt** and can be found on the google drive above.
+   1. Paper for this GWAS is here: <https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4589895/>
+
+The R code, in markdown format and regular R script, we will use for analysis is called:  **MR\_urate\_CAD.Rmd** or **MR\_urate\_CAD.R.** These can also be found on the google drive. 
+
+(html output from the R markdown is also provided)
+
+Note for optional file to download: The first part of preparing for an MR analysis includes selecting the variants and aligning the alleles in the exposure and outcome GWAS.  These selected variants are used for the MR analysis.  The file on the google drive called “**urate\_CAD.csv**” is a data file of these selected and aligned variants.  This data will be used for the actual MR analyses.  So, if you get lost in the first part of the script you can use this file and test out the actual MR analysis portion.
